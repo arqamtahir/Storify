@@ -11,6 +11,9 @@
 # production
 /build
 
+# nuxt.js build output
+.nuxt
+
 # misc
 .DS_Store
 .env.local
