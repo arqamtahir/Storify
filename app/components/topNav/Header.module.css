@@ -1,0 +1,23 @@
+.header {
+  background-color: rgb(255, 252, 212) !important;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menuButton {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.link {
+  color: #555;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #0070f3;
+}
