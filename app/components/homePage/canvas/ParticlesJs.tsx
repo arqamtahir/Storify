@@ -20,17 +20,11 @@ const ParticlesJs = () => {
         });
     }, []);
 
-    const particlesLoaded = (container) => {
-        console.log(container);
-      };
+    // const particlesLoaded = (container) => {
+    //   };
     
       const options = useMemo(
         () => ({
-          background: {
-            color: {
-              value: "",
-            },
-          },
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -65,11 +59,7 @@ const ParticlesJs = () => {
               width: 1,
             },
             move: {
-              direction: "none",
               enable: true,
-              outModes: {
-                default: "bounce",
-              },
               random: false,
               speed: 3,
               straight: false,
@@ -99,12 +89,11 @@ const ParticlesJs = () => {
     
       if (init) {
         return (
-              <Particles
-                  id="tsparticles"
-                  className={styles.particles}
-                  particlesLoaded={particlesLoaded}
-                  options={options}
-              />
+          <Particles
+            id="tsparticles"
+            className={styles.particles}
+            options={options}
+          />
         );
     }
     

@@ -4,7 +4,7 @@ import * as motion from "framer-motion/client"
 
 export default function TopSection() {
   return (
-    <div className="p-8 sm:p-20 bg-fffcd4-074b6c grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">
+    <div className="p-8 sm:p-20 bg-gradient grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">
       <div className="block justify-center items-center w-full h-full">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
