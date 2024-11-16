@@ -11,7 +11,22 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        base: {
+          DEFAULT: '#074b6c',
+        },
+        primary: {
+          DEFAULT: '#fffcd6b2',
+        },
       },
+      dropShadow: {
+        base: [
+          "0 0px 20px #074b6c6e",
+          "0 0px 65px rgba(255, 255,255, 0.2)"
+        ],
+        primary: [
+          
+        ]
+      }
     },
   },
   plugins: [],
