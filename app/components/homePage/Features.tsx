@@ -10,7 +10,8 @@ export default function Features() {
     <div className="p-8 sm:p-20 bg-base w-full h-max">
       <div className="relative isolate bg-base w-full  px-3 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="mt-2 lg:text-6xl font-semibold tracking-tight text-dark text-3xl">
+          <h1
+            className="text-3xl mt-2 lg:text-6xl font-semibold tracking-tight top-0 h-auto py-2 justify-center flex bg-gradient-to-r items-center from-primary via-sky-300 to-primary bg-clip-text text-transparent text-center ">
             Keeping storage simple and efficient
           </h1>
         </div>
@@ -30,7 +31,8 @@ export default function Features() {
               <h1 className="feature-title text-xl sm:text-2xl font-bold">
                 Sharing
               </h1>
-              <p className="feature-description text-sm sm:text-base">
+
+              <p className="font-medium feature-description text-sm sm:text-base text-light">
                 Enjoy multiple file sharing options through the Storify applications and the web interface!
               </p>
             </div>
@@ -53,7 +55,8 @@ export default function Features() {
               <h1 className="feature-title text-xl sm:text-2xl font-bold">
                 Media and Usability
               </h1>
-              <p className="feature-description text-sm sm:text-base">
+
+              <p className="font-medium feature-description text-sm sm:text-base text-light">
                 Using our audio and video player, you can play your favorite songs and watch your favorite videos as soon as you upload them to the cloud storage platform.
               </p>
             </div>
@@ -76,7 +79,8 @@ export default function Features() {
               <h1 className="feature-title text-xl sm:text-2xl font-bold">
                 Security
               </h1>
-              <p className="feature-description text-sm sm:text-base">
+
+              <p className="font-medium feature-description text-sm sm:text-base text-light">
                 To guarantee your files' safety, Storify uses TLS/SSL encryption, applied when information is transferred from your device to the Storify servers.
               </p>
             </div>

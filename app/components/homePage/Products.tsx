@@ -10,7 +10,8 @@ export default function Products() {
     <div className="p-8 sm:p-20 bg-base w-full h-max">
       <div className="relative isolate bg-base w-full  px-3 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="mt-2 lg:text-6xl font-semibold tracking-tight text-dark text-3xl">
+          <h1
+            className="text-3xl mt-2 lg:text-6xl font-semibold tracking-tight top-0 h-auto py-2 justify-center flex bg-gradient-to-r items-center from-primary via-sky-300 to-primary bg-clip-text text-transparent text-center ">
             Trusted by employees working in Different sectors
           </h1>
         </div>

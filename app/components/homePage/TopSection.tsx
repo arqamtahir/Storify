@@ -39,10 +39,13 @@ export default function TopSection() {
       <div className={`lg:p-20 p-3 pt-5 ${styles.sectionContent}`} >
         <div ref={childRef}>
           <div className="mx-auto max-w-4xl text-center">
-            {/* <h2 className="text-base font-semibold text-indigo-600">Pricing</h2> */}
-            <p className="mt-2 lg:text-6xl font-semibold tracking-tight text-gray-900 text-3xl">
+            <span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-sky-500 via-sky-800 to-sky-500 bg-clip-text text-3xl box-content font-extrabold text-transparent text-center select-none">
               Storify! anytime anywhere
-            </p>
+            </span>
+            <h1
+              className="text-3xl mt-2 lg:text-6xl font-semibold tracking-tight top-0 h-auto py-2 justify-center flex bg-gradient-to-r items-center from-base via-sky-600 to-base bg-clip-text text-6xl font-extrabold text-transparent text-center ">
+              Storify! anytime anywhere
+            </h1>
           </div>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-gray-600 sm:text-xl">
             Storify! Store, Watch, Download your memories anywhere, anytime

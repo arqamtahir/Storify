@@ -1,0 +1,21 @@
+.backgroundContainer {
+	position: relative;
+	min-height: auto;
+	display: grid;
+	height: auto;
+	/* width: 100%; */
+	overflow: hidden;
+	background: linear-gradient(0deg, #074b6c 0%, #fffcd6b2 100%);
+	/* padding: 2rem; */
+}
+
+.sectionContent {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	color: #fff;
+}
+
+.featureBoxShadow{
+	box-shadow: 0px -25px 100px -50px #fffcd445;
+}

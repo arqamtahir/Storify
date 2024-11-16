@@ -15,10 +15,11 @@ export default function Pricing() {
       ],
       linkText: 'Get started today',
       bgColor: 'bg-gradient',
-      textColor: 'text-indigo-600',
+      textColor: 'button-dark',
       priceTextColor: 'text-dark',
-      buttonTextColor: 'text-indigo-600',
+      buttonTextColor: 'button-light',
       borderColor: 'ring-gray-900/10',
+      ringColor: 'ring-primary',
     },
     {
       id: 'enterprise',
@@ -34,10 +35,11 @@ export default function Pricing() {
       ],
       linkText: 'Get started today',
       bgColor: 'bg-primary-7',
-      textColor: 'text-indigo-400',
+      textColor: 'button-dark',
       priceTextColor: 'text-dark',
-      buttonTextColor: 'text-indigo-400',
+      buttonTextColor: 'button-dark',
       borderColor: 'ring-gray-900/10',
+      ringColor: 'ring-base',
     },
     {
       id: 'professional',
@@ -53,10 +55,11 @@ export default function Pricing() {
       ],
       linkText: 'Get started today',
       bgColor: 'bg-gradient',
-      textColor: 'text-indigo-600',
+      textColor: 'button-dark',
       priceTextColor: 'text-dark',
-      buttonTextColor: 'text-indigo-600',
+      buttonTextColor: 'button-light',
       borderColor: 'ring-gray-900/10',
+      ringColor: 'ring-primary',
     },
   ];
 
@@ -73,7 +76,8 @@ export default function Pricing() {
       </div>
 
       <div className="mx-auto max-w-4xl text-center">
-        <h1 className="mt-2 lg:text-6xl font-semibold tracking-tight text-dark text-3xl">
+        <h1
+          className="text-3xl mt-2 lg:text-6xl font-semibold tracking-tight top-0 h-auto py-2 justify-center flex bg-gradient-to-r items-center from-primary via-sky-300 to-primary bg-clip-text text-transparent text-center ">
           Choose the right plan for you
         </h1>
       </div>
@@ -88,7 +92,10 @@ export default function Pricing() {
             key={plan.id}
             className={`rounded-3xl p-8 ${plan.bgColor} shadow-md ring-1 ${plan.borderColor}`}
           >
-            <h3 className={`text-base font-semibold ${plan.textColor}`}>{plan.title}</h3>
+            <h3
+              className="text-2xl font-semibold tracking-tight top-0 h-auto bg-gradient-to-r items-center from-base to-sky-700 w-fit bg-clip-text text-transparent">
+              {plan.title}
+            </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
               <span className={`text-5xl font-semibold tracking-tight ${plan.priceTextColor}`}>
                 {plan.price}
@@ -99,23 +106,25 @@ export default function Pricing() {
             <ul className="mt-8 space-y-3 text-sm text-gray-600">
               {plan.features.map((feature, index) => (
                 <li key={index} className="flex gap-x-3">
-                  <svg className="h-6 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                  <svg className={`h-6 w-5 ${plan.buttonTextColor}`} viewBox="0 0 20 20" fill="currentColor">
                     <path
                       fillRule="evenodd"
                       d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  {feature}
+
+                  <span className={`${plan.buttonTextColor}`}>
+                    {feature}
+                  </span>
                 </li>
               ))}
             </ul>
-            <a
-              href="#"
-              className={`mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold ${plan.buttonTextColor} ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-indigo-600`}
+            <span
+              className={`curcor-pointer mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold ${plan.buttonTextColor} ${plan.ringColor} ring-1 ring-inset focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-indigo-600`}
             >
               {plan.linkText}
-            </a>
+            </span>
           </div>
         ))}
       </div>

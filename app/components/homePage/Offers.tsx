@@ -20,10 +20,12 @@ export default function Offers() {
         </div>
 
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="mt-2 lg:text-6xl font-semibold tracking-tight text-dark text-3xl">
+          <h1
+            className="text-3xl mt-2 lg:text-6xl font-semibold tracking-tight top-0 h-auto py-2 justify-center flex bg-gradient-to-r items-center from-primary via-sky-300 to-primary bg-clip-text text-transparent text-center ">
             What Benifits You will get
           </h1>
         </div>
+
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-light sm:text-xl">
           Storify Provides a bunch of benifits from end to end encryptions to sharing among families
         </p>
@@ -42,10 +44,12 @@ export default function Offers() {
               <h1 className="feature-title text-xl sm:text-2xl font-bold">
                 Sharing
               </h1>
-              <p className="feature-description text-sm sm:text-base">
+
+              <p className="font-medium feature-description text-sm sm:text-base text-light">
                 Enjoy multiple file sharing options through the Storify applications and the web interface!
               </p>
             </div>
+
             <div className="image-wrapper flex items-center justify-center">
               <img
                 className="w-full h-auto"
@@ -62,10 +66,12 @@ export default function Offers() {
               <h1 className="feature-title text-xl sm:text-2xl font-bold">
                 Media and Usability
               </h1>
-              <p className="feature-description text-sm sm:text-base">
+              
+              <p className="font-medium feature-description text-sm sm:text-base text-light">
                 Using our audio and video player, you can play your favorite songs and watch your favorite videos as soon as you upload them to the cloud storage platform.
               </p>
             </div>
+
             <div className="image-wrapper flex items-center justify-center">
               <img
                 className="w-full h-auto"
@@ -90,10 +96,12 @@ export default function Offers() {
               <h1 className="feature-title text-xl sm:text-2xl font-bold">
                 Sharing
               </h1>
-              <p className="feature-description text-sm sm:text-base">
+
+              <p className="font-medium feature-description text-sm sm:text-base text-light">
                 Enjoy multiple file sharing options through the Storify applications and the web interface!
               </p>
             </div>
+
             <div className="image-wrapper flex items-center justify-center">
               <img
                 className="w-full h-auto"
@@ -110,10 +118,12 @@ export default function Offers() {
               <h1 className="feature-title text-xl sm:text-2xl font-bold">
                 Media and Usability
               </h1>
-              <p className="feature-description text-sm sm:text-base">
+
+              <p className="font-medium feature-description text-sm sm:text-base text-light">
                 Using our audio and video player, you can play your favorite songs and watch your favorite videos as soon as you upload them to the cloud storage platform.
               </p>
             </div>
+
             <div className="image-wrapper flex items-center justify-center">
               <img
                 className="w-full h-auto"

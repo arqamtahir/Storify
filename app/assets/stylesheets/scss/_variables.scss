@@ -1,7 +1,9 @@
 
 $base-font-size: 16px;
-$heading-color: #f1eec7be;
-$text-color-light: #c9c8adbc;
+$heading-color: #fdfce0d4;
+$text-color-light: #faf9e4b2;
+$button-color-dark: #074b6c;
+$button-color-light: #fffcd6b2;
 $text-color-dark: #070707bb;
 $link-color: #1a73e8;
 $link-hover-color: #0f5bb5;
@@ -199,8 +201,12 @@ table {
   color: $text-color-dark
 }
 
-.bg-button{
+.button-light{
+  color: $button-color-light;
+}
 
+.button-dark{
+  color: $button-color-dark;
 }
 
 .bg-primary-7{
